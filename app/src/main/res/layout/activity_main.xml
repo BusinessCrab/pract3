@@ -7,6 +7,12 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical">
+    <androidx.fragment.app.FragmentContainerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.pract3.LogFragment" />
 
     <ImageView
         android:id="@+id/imageview"
@@ -21,8 +27,7 @@
         android:layout_height="150dp"
         android:gravity="center"
         android:textSize="40dp"
-        android:textColor="@color/dark_green"
-        android:text="@string/app_logo"
+        android:text="@string/title"
         />
     <EditText
         android:id="@+id/login_text"
@@ -36,10 +41,8 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/dark_green"
         android:onClick="LogButton"
         android:gravity="center"
         anroid:textSize="30dp"
-        anroid:textColor="@color/red"
-        android:text="Перейти к SecondActivity" />
+        android:text="Next" />
 </LinearLayout>
